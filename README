@@ -1,0 +1,6 @@
+
+RPC wrapper library for offloading OpenCL workloads over TCP
+
+The example OpenCL code are adapted from OpenCL SDK sample code from Nvidia,
+AMD, and Intel.
+

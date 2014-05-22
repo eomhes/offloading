@@ -1,0 +1,11 @@
+
+Compile client
+
+gcc ocl_rpc_xdr.c ocl_rpc_clnt.c ocl_test.c -o client -lOpenCL -I <path to OpenCL headers>
+
+Compile server
+
+gcc ocl_rpc_xdr.c ocl_rpc_server.c ocl_rpc_svc.c -o server -lOpenCL -I <path to OpenCL headers>
+
+
+

@@ -1,0 +1,16 @@
+
+compile client
+
+gcc and_rpc_clnt.c tpl.c ocl_utils.c sobel.c -I /opt/AMDAPP/include -lz -o client
+
+compile server
+
+gcc and_rpc_server.c and_rpc_handler.c tpl.c -I /opt/AMDAPP/include -lOpenCL -lz -lpthread -o server
+
+On EC2
+
+For security group choose IPOP
+
+sudo yum install zlib-devel
+
+dont forget to change type to GPU instead of CPudo 
